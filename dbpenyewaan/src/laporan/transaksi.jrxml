@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a677cde3-fd61-456c-a6e9-3ce6eb2a8f51">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select*from transaksi]]>
+	</queryString>
+	<field name="Nama_Pc" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Bayar" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Waktu" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Tanggal" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="172" y="25" width="197" height="39" uuid="b30390cc-c45c-4718-9c5b-23612c050bba"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Laporan Transaksi]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="20" width="555" height="1" uuid="91e3009d-c59d-4b7b-b2fd-da0b22134d7f"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement x="14" y="2" width="100" height="20" uuid="950fda50-aeef-4173-952c-88d443a3dbad"/>
+				<text><![CDATA[Nama_Pc]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="155" y="2" width="100" height="20" uuid="e41ea7ae-b9eb-4ecc-bdfb-7e80ab0177b8"/>
+				<text><![CDATA[Bayar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="294" y="2" width="100" height="20" uuid="165215de-1000-4862-9ceb-4641577742c4"/>
+				<text><![CDATA[Waktu]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="2" width="100" height="20" uuid="821de918-d8ff-47df-83e2-f8e68f39706b"/>
+				<text><![CDATA[Tanggal]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="45" splitType="Stretch">
+			<textField>
+				<reportElement x="14" y="9" width="100" height="20" uuid="57179cc3-35f0-4495-97f6-fc31ff5ebfbb"/>
+				<textFieldExpression><![CDATA[$F{Nama_Pc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="155" y="10" width="100" height="20" uuid="5502a92b-6409-43c7-84a1-e3551bb10991"/>
+				<textFieldExpression><![CDATA[$F{Bayar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="294" y="9" width="100" height="20" uuid="0330500a-5e5f-42bb-8a2f-cfbfd2551a72"/>
+				<textFieldExpression><![CDATA[$F{Waktu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="431" y="10" width="100" height="20" uuid="13b8ba8a-31fc-413e-be44-e6c71011c3c6"/>
+				<textFieldExpression><![CDATA[$F{Tanggal}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
